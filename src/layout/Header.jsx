@@ -9,9 +9,7 @@ const Header = () => {
         IoT Control Center
       </h2>
       <div className="flex items-center gap-4">
-        <span className="text-sm text-gray-400">
-          Production Live
-        </span>
+        
 
         <button
           onClick={logout}
