@@ -61,5 +61,6 @@ export const uploadOTA = (formData) =>
   api.post("/api/ota/upload", formData, {
     headers: { "Content-Type": "multipart/form-data" },
   })
-
+export const metrics = (data) => 
+  api.post("/metrics", data)
 export default api
