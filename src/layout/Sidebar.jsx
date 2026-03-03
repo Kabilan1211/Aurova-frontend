@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom"
 import { LayoutDashboard, Upload, PlusSquare } from "lucide-react"
 import { Server } from "lucide-react"
+import { BarChart3 } from "lucide-react"
 
 const Sidebar = () => {
     return (
@@ -38,6 +39,13 @@ const Sidebar = () => {
                 >
                     <Server size={18} />
                     Devices
+                </NavLink>
+                <NavLink
+                    to="/metrics"
+                    className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-primary/10 transition"
+                >
+                    <BarChart3 size={18} />
+                    Metrics
                 </NavLink>
             </nav>
         </aside>

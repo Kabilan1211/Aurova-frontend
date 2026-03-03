@@ -9,6 +9,7 @@ import RegisterDevice from "./pages/RegisterDevice"
 import RegisterSuccess from "./pages/RegisterSuccess"
 import Login from "./pages/Login"
 import Devices from "./pages/Devices"
+import Metrics from "./pages/Metrics"
 
 function App() {
   const { token } = useAuth()
@@ -36,6 +37,7 @@ function App() {
                   <Route path="/register" element={<RegisterDevice />} />
                   <Route path="/register/success" element={<RegisterSuccess />} />
                   <Route path="/devices" element={<Devices />} />
+                  <Route path="/metrics" element={<Metrics />} />
                 </Routes>
               </Layout>
             ) : (
